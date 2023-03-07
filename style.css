@@ -1,0 +1,375 @@
+﻿/* Deep Blue :  #528BCB */
+/* Light Blue:  #C1D9F3 */
+/* Super Light Blue : #E0ECF9 */
+/* White : #FFFFFF */
+/* Link Color : #1E5394 */
+/* Grey : #929292 */
+/* Green : #289100 */
+/* Border grey : #E3E6EC */
+
+/* RESET */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* RESET END*/
+
+html,body {
+font-family:Verdana;
+line-height:1.2em;
+font-size:12px;
+height: 100%;
+background-color:#FFF;
+}
+
+p { 
+	margin: 0.3em 0px;  
+	text-align: justify;
+}
+
+a, a:link, a:visited , a:hover, a:active{
+	text-decoration: none; 
+	color: #1E5394;
+	cursor:pointer;
+}
+
+
+tr {
+display:table-row;
+vertical-align:inherit;
+background-color: #FFFFFF;
+}
+
+td {
+display:table-cell;
+}
+
+table {
+border-spacing:2px;
+text-indent:0;
+}
+tbody {
+display:table-row-group;
+vertical-align:middle;
+}
+
+
+.clearboth{
+clear: both;
+}
+
+
+input.btn{
+height: 2em;
+}
+
+input.txt{
+height: 1.5em;
+padding-top:0.1em;
+border-style:solid;
+border-width:1px;
+border-color:#7C7C7C #C3C3C3 #C3C3C3 #9A9A9A;
+outline:medium none;
+}
+
+/* Testing purpose 
+div{
+border: solid 1px #F00;
+}
+*/
+	
+/* Overall layout */
+
+
+#container{
+position:absolute;
+left:0px;
+top:25px;
+bottom:0px;
+right:0px;
+-moz-border-radius : 5px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+background-color:#C1D9F3;
+min-width: 800px;
+}
+
+/* Top Info Bar */
+#infobar{
+height: 30px;
+background-color:#fff;
+}
+
+#infobar p{
+background-color:#fff;
+margin-top:5px;
+}
+#total{
+float : left;
+margin-left:5px;
+}
+#total span{
+font-weight:normal;
+font-weight:bold;
+font-size: 14px;
+color : #1E5394;
+}
+
+#actionList{
+float : right;
+color: #1E5394;
+margin: 5px;
+}
+
+
+/* Left Panel */
+
+#createButtons{
+margin : 6px 0px;
+margin-left:5px;
+float: left;
+background-color:#C1D9F3;
+display:inline;
+}
+
+#searchButtons{
+margin : 6px 5px;
+float: right;
+background-color:#C1D9F3;
+display:inline;
+}
+
+
+#leftBox{
+width: 180px; 
+overflow:auto;
+position:absolute;
+left:0px;
+top:40px;
+bottom:5px;
+background-color: #C1D9F3;
+border-left:solid 5px #C1D9F3;
+border-bottom:solid 5px #C1D9F3;
+}
+
+#leftDetail{
+height:5000px;
+background-color: #FFFFFF;
+}
+
+.groupListTitle{
+padding-left: 5px;
+color:#929292;
+}
+
+ul.groupList {
+list-style:none outside none;
+}
+
+ul.groupList li {
+height:20px;
+margin-bottom:2px;
+overflow:hidden;
+padding:5px 12px 0;
+white-space:nowrap;
+width:auto;
+}
+ul.groupList li.selected {
+background:none repeat scroll 0 0 #528BCB;
+}
+
+ul.groupList li.selected  a{
+color:#FFFFFF;
+}
+
+#phoneContact{
+padding-top: 5px;
+}
+#mailContact{
+padding-top: 3px;
+padding-bottom: 7px;
+border-bottom: solid 1px #E3E6EC;
+}
+#qqContact{
+padding-top: 3px;
+padding-bottom: 7px;
+border-bottom: solid 1px #E3E6EC;
+}
+
+/* Middle Panel */
+
+#middleBox{
+position:absolute;
+top:70px;
+bottom:5px;
+left:185px;
+overflow:auto;
+width: 220px;
+background-color: #FFFFFF;
+border-right:solid 5px #C1D9F3;
+border-left:solid 5px #C1D9F3;
+border-bottom:solid 5px #C1D9F3;
+}
+
+#middleTitle{
+height:25px;
+overflow:hidden;
+padding: 0px 0px 5px 0px;
+position:absolute;
+top:40px;
+left:185px;
+bottom:15px;
+width:220px;
+background-color: #E0ECF9;
+border-right:solid 5px #C1D9F3;
+border-left:solid 5px #C1D9F3;
+display:inline;
+}
+
+#middleTitle a{
+text-decoration: underline;
+}
+
+#middleTitle p{
+padding-left: 10px;
+padding-top: 5px;
+}
+
+#contactTb{
+height:5000px;
+background-color: #FFFFFF;
+}
+
+#contactTb  tr{
+border-bottom:1px solid #E3E6EB;
+background-color: #FFFFFF;
+}
+
+#contactTb td{
+padding:0px 10px;
+border-bottom:1px solid #CCCCCC;
+width: 100%;
+height:27px;
+background-color: #FFFFFF;
+}
+
+#contactTb td.cBox{
+width: 10px;
+padding-right:0px;
+}
+
+
+
+
+
+/* Right Panel */
+#rightBox{
+position:absolute;
+top:40px;
+bottom:5px;
+left:415px;
+right:0px;
+overflow:auto;
+background-color: #FFFFFF;
+border-right:solid 5px #C1D9F3;
+border-bottom:solid 5px #C1D9F3;
+}
+
+#rightBoxWrapper{
+overflow:auto;
+}
+
+
+#contactDetail{
+height: 5000px;
+padding: 5px;
+}
+
+
+#contactName{
+font-size: 14px;
+color: #1E5394;
+font-weight:bold;
+width: 100%;
+}
+
+#contactNameTx{
+padding: 0px;
+margin : 0px 5px;
+float:left;
+}
+#contactIcon{
+margin : 0px;
+padding: 0px ;
+float:right;
+}
+
+.contactBlock{
+margin : 5px 5px 5px 5px;
+padding: 5px 0px 5px 0px;
+text-align:justify;
+width:345px;
+}
+
+
+
+
+#contactDetail p{
+padding-bottom: 5px;
+}
+
+#contactDetail a{
+text-decoration: underline; 
+}
+
+#contactMail {
+color:#1E5394;
+}
+
+.contactEmailAddr{
+color: #289100;
+font-weight:bold;
+}
+
+.contactLabel{
+color: #929292;
+}
+
+#homeAddr{
+width: 19em;
+margin-left: 3.5em;
+margin-top: -1.2em;
+color: #000;
+}
+#downarrow{
+vertical-align:bottom;
+}
+
